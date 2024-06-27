@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-- family-names: "Khorassany"
-  given-names: "Shayan"
-title: "radiation_impedance"
-version: 1.0.0
-date-released: 2023-08-07
-url: "https://github.com/khorassa/radiation_impedance"
