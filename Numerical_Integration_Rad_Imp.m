@@ -6,20 +6,19 @@
 %   Simulate1D and 2D are options to toggle off simulating one of the cases.
 % Note that the output of this script is dimensionless, in other words, it
 % computes Z/(rho * c * 4ab); where Z is the radiation impedance, rho is
-% the medium density, c is the speed of sound, and 4ab is the total area of
-% the memrbane
+% the medium density, c is the speed of sound, and 4ab is the total area of the membrane
 % The results are saved into a directory named Rad_Imp
 mkdir('Rad_Imp\OneDZ');
 mkdir('Rad_Imp\TwoDZ');
 
 Q = [1 4 10 25]; % aspect ratios to simulate
 
-kaxInc = 0.1; %0.025; % increment in kax in Log scale
+kaxInc = 0.025; % increment in kax in Log scale
 kax = 10.^(-2:kaxInc:log10(20));
 kaxInc1D = 0.1; % increment in kax1D in Log scale
 kax1D = 10.^(-2:kaxInc1D:1); % going up to 10 since 1D is slower
-xMin = 0.25;%0.1 % the threshold under which the taylor expansion is used instead
-% of the original expression, because the original expression suffers from percision errors
+xMin = 0.1 % the threshold under which the Taylor expansion is used instead
+% of the original expression, because the original expression suffers from precision errors
 
 % Set to 1 to compute and 0 to not
 Simulate2D = 1;
